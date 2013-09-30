@@ -1,1 +1,1 @@
-web: gunicorn twerge:app
+web: gunicorn find_merge_tweet:app
