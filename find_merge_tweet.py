@@ -1,7 +1,6 @@
 # From the python package flask, import the "Flask" constructor, and request library
 from flask import Flask, request, render_template, url_for
 import tweepy
-
 # Create an app from the Flask constructor
 app = Flask(__name__)
 
@@ -9,8 +8,8 @@ app = Flask(__name__)
 def form():
     return render_template('twerge_home.html')
 
-auth = tweepy.OAuthHandler("W0QmxWkFn04vUQKCVll1Q", "2K0GaTvDEFYnKKjxg2b2VWUZblblONIFOaXeVU7K9ZE")
-auth.set_access_token("81589905-7SuMFGvkWuP4S0oJaN012Fqubp3yKwu2tWWDR3nM", "TZUx2MHO1mlJzPE30tdbB8owEsg4ZnqkY5jaZ8d3vvo")
+auth = tweepy.OAuthHandler("", "") #add codes from twitter app
+auth.set_access_token("", "") #add code from twitter app
 user = tweepy.API(auth)
     
 @app.route('/combined', methods=['POST'])
